@@ -60,7 +60,7 @@ abstract class MemberMetadata extends GenericMetadata implements PropertyMetadat
      * @param string $name     The name of the member
      * @param string $property The property the member belongs to
      */
-    public function __construct($class, $name, $property)
+    public function __construct(string $class, string $name, string $property)
     {
         $this->class = $class;
         $this->name = $name;
@@ -184,7 +184,7 @@ abstract class MemberMetadata extends GenericMetadata implements PropertyMetadat
     private function checkConstraint(Constraint $constraint)
     {
         if (!\in_array(Constraint::PROPERTY_CONSTRAINT, (array) $constraint->getTargets(), true)) {
-            throw new ConstraintDefinitionException(sprintf('The constraint "%s" cannot be put on properties or getters.', \get_class($constraint)));
+            throw new ConstraintDefinitionException(sprintf('The constraint "%s" cannot be put on properties or getters.', get_debug_type($constraint)));
         }
 
         if ($constraint instanceof Composite) {

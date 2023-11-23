@@ -10,8 +10,6 @@ return array(
     'Zend_Version' => array($vendorDir . '/zf1/zend-version/library'),
     'Zend_Validate' => array($vendorDir . '/zf1/zend-validate/library'),
     'Zend_Uri' => array($vendorDir . '/zf1/zend-uri/library'),
-    'Zend_Search_Lucene' => array($vendorDir . '/zf1/zend-search-lucene/library'),
-    'Zend_Search' => array($vendorDir . '/zf1/zend-search/library'),
     'Zend_Registry' => array($vendorDir . '/zf1/zend-registry/library'),
     'Zend_Oauth' => array($vendorDir . '/zf1/zend-oauth/library'),
     'Zend_Mime' => array($vendorDir . '/zf1/zend-mime/library'),
